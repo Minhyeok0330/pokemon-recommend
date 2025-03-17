@@ -7,7 +7,9 @@
 </head>
 <body>
     <h1>{{username}}! 함께 모험을 떠날 포켓몬이야!</h1>
-    <img src={{my_pokemon_numbers}}>
-             
+    {% for my_pokemon_number in my_pokemon_numbers%}
+    <img src=https://data1.pokemonkorea.co.kr/newdata/pokedex/full/{{my_pokemon_number}}01.png>
+    <p>포켓몬 이름</p>
+    {% endfor %}
 </body>
 </html>
